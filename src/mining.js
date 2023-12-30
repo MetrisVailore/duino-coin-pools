@@ -31,7 +31,7 @@ let globalShares = {
     total: 0,
 };
 if (!max_shares_per_minute) {
-    let max_shares_per_minute = 80;
+    let max_shares_per_minute = 160;
 }
 
 const getDiff = (poolRewards, textDiff) => {
