@@ -8,10 +8,10 @@ const highestPCdiff = poolRewards["NET"]["difficulty"] * 5.19202;
 const highestESPdiff = poolRewards["ESP32"]["difficulty"];
 const highestAVRdiff = poolRewards["DUE"]["difficulty"];
 const gpuMiningPercentage =
-    poolRewards["EXTREME"]["kolka_decrease_perc"] * 0.01;
-const pcMiningPercentage = poolRewards["NET"]["kolka_decrease_perc"] * 0.01;
-const espMiningPercentage = poolRewards["ESP32"]["kolka_decrease_perc"] * 0.01;
-const avrMiningPercentage = poolRewards["AVR"]["kolka_decrease_perc"] * 0.01;
+    poolRewards["EXTREME"]["kolka_decrease_perc"] * 0.1;
+const pcMiningPercentage = poolRewards["NET"]["kolka_decrease_perc"] * 0.1;
+const espMiningPercentage = poolRewards["ESP32"]["kolka_decrease_perc"] * 0.1;
+const avrMiningPercentage = poolRewards["AVR"]["kolka_decrease_perc"] * 0.1;
 
 function V1(hashrate, difficulty, workers, reward_div) {
     let output;
