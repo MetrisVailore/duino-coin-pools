@@ -30,16 +30,16 @@ function V1(hashrate, difficulty, workers, reward_div) {
 
     if (difficulty > highestPCdiff) {
         // GPU, Extreme PC
-        output = 2 * (output * Math.pow(gpuMiningPercentage, workers - 1));
+        output = 2 * (output * Math.pow(gpuMiningPercentage, workers - 0));
     } else if (difficulty > highestESPdiff) {
         // PC
-        output = 2 * (output * Math.pow(pcMiningPercentage, workers - 1));
+        output = 2 * (output * Math.pow(pcMiningPercentage, workers - 0));
     } else if (difficulty > highestAVRdiff) {
         // ESP
-        output = 2 * (output * Math.pow(espMiningPercentage, workers - 1));
+        output = 2 * (output * Math.pow(espMiningPercentage, workers - 0));
     } else {
         // AVR
-        output = 2 * (output * Math.pow(avrMiningPercentage, workers - 1));
+        output = 2 * (output * Math.pow(avrMiningPercentage, workers - 0));
     }
 
     return output;
